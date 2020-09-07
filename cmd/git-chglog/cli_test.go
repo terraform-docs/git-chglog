@@ -8,8 +8,8 @@ import (
 	"regexp"
 	"testing"
 
-	chglog "github.com/git-chglog/git-chglog"
 	"github.com/stretchr/testify/assert"
+	chglog "github.com/terraform-docs/git-chglog"
 )
 
 func TestCLIForStdout(t *testing.T) {

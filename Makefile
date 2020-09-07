@@ -2,12 +2,15 @@
 bootstrap: clean deps
 
 .PHONY: deps
-deps:
-	dep ensure -v
+deps: vendor
+
+.PHONY: vendor
+vendor:
+	go mod vendor
 
 .PHONY: clean
 clean:
-	rm -rf ./vendor/
+	# rm -rf ./vendor/
 	rm -rf ./dist/
 	rm -rf ./git-chglog
 	rm -rf $(GOPATH)/bin/git-chglog
@@ -15,7 +18,7 @@ clean:
 
 .PHONY: bulid
 build:
-	go build -i -o git-chglog
+	CGO_ENABLED=0 go build -o git-chglog
 
 .PHONY: test
 test:
