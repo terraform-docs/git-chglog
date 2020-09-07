@@ -1,3 +1,5 @@
+**This project is a fork of upstream `git-chglog` project (which is unmaintain as of writing of this). This project does not replace that nor we intend to maintain it outside of any future need for internal `terraform-docs` related improvements and/or bug fixes. Please refere to the main project at https://github.com/git-chglog/git-chglog.**
+
 # git-chglog
 
 ![git-chglog](https://raw.githubusercontent.com/git-chglog/artwork/master/repo-banner%402x.png)
