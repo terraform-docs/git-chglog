@@ -3,7 +3,7 @@ package main
 import (
 	"io"
 
-	chglog "github.com/git-chglog/git-chglog"
+	chglog "github.com/terraform-docs/git-chglog"
 )
 
 type mockGeneratorImpl struct {
